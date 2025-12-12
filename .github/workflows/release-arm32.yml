@@ -114,7 +114,7 @@ jobs:
         with:
           args: --acl public-read
         env:
-          FILE: ./ipctool-${{ env.GIT_HASH }}
+          FILE: ./ipctool_${{ env.GIT_HASH }}
           AWS_REGION: 'eu-north-1'
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
